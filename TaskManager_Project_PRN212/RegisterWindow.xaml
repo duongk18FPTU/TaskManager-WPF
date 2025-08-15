@@ -1,0 +1,27 @@
+﻿<Window x:Class="TaskManager_Project_PRN212.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaskManager_Project_PRN212"
+        mc:Ignorable="d"
+        Title="Đăng ký tài khoản" Height="450" Width="800">
+    <Grid>
+        <TextBlock Text="Tên đăng nhập:" Margin="177,52,-147,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtUsername" Width="250" Height="30" Margin="30,50,0,0" VerticalAlignment="Top"/>
+
+        <TextBlock Text="Mật khẩu:" Margin="177,110,-147,0" VerticalAlignment="Top"/>
+        <PasswordBox Name="txtPassword" Width="250" Height="30" Margin="30,110,0,0" VerticalAlignment="Top"/>
+
+        <TextBlock Text="Nhập lại mật khẩu:" Margin="177,169,-147,0" VerticalAlignment="Top"/>
+        <PasswordBox Name="txtConfirmPassword" Width="250" Height="30" Margin="30,170,0,0" VerticalAlignment="Top"/>
+
+        <TextBlock Text="Email:" Margin="177,285,-147,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtEmail" Width="250" Height="30" Margin="290,286,260,0" VerticalAlignment="Top"/>
+
+        <Button Name="btnRegister" Content="Đăng ký" Width="120" Height="35" Margin="355,336,325,0" VerticalAlignment="Top" Click="btnRegister_Click"/>
+        <Button Name="btnCancel" Content="Hủy" Width="120" Height="33" Margin="355,376,325,0" VerticalAlignment="Top" Click="btnCancel_Click"/>
+        <TextBox x:Name="txtFullName" Width="250" Height="30" Margin="290,236,260,0" VerticalAlignment="Top"/>
+        <TextBlock Text="Full Name" Margin="177,235,-147,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
